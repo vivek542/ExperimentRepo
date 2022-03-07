@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Family Tree (Vivek Chauhan)</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta charset="utf-8" />
+<style type="text/css">
+  
+  .node {
+    cursor: pointer;
+  }
+
+  .overlay{
+      background-color:#FFF;
+  }
+   
+  .node circle {
+    fill: #fff;
+    stroke: green;
+    stroke-width: 1.5px;
+  }
+   
+  .node text {
+    font-size:11px; 
+    font-family:sans-serif;
+  }
+   
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+  }
+
+  .templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .ghostCircle.show{
+      display:block;
+  }
+
+  .ghostCircle, .activeDrag .ghostCircle{
+       display: none;
+  }
+
+</style>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<!--<script src="jquery-1.10.2.min.js"></script>
+<script src="d3.v3.min.js"></script> -->
+<script type="text/javascript" src="./dndTree.js"></script>
+</head>
+<body>
+	<p style="margin:2px;padding:0px;font-size:11px;font-family:sans-serif;font-weight:bold;"> Welcome to our Family Tree which contains info for last 9 Generations. Our ancestors belong from Aaschaura Village, Post Bansdih, District - Ballia (UP) India.</p>
+	<div id="tree-container"></div>
+</body>
+</html>
